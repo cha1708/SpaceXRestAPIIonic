@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'data-of-flights',
+    loadChildren: () => import('./data-of-flights/data-of-flights.module').then( m => m.DataOfFlightsPageModule)
+  },
 ];
 
 @NgModule({

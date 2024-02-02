@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Data of Different Flights</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let datum of data" class="card" mode="ios">
+    <ion-card-title>Flight Number: {{datum.flight_number}}</ion-card-title>
+    <ion-card-header>Mission Name: {{datum.mission_name}}</ion-card-header>
+    <ion-card-subtitle>Year of Release: {{datum.launch_year}}</ion-card-subtitle>
+    <ion-card-content>
+      Details: {{datum.details}}
+      <br>
+      Launch Success: {{datum.launch_success}}
+      <br>
+      <a href="{{datum.links.video_link}}">Video Link</a>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
