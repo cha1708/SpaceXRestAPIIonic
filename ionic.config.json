@@ -1,0 +1,7 @@
+{
+  "name": "SpaceXRestAPI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
